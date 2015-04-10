@@ -1,0 +1,77 @@
+<html>
+<head>
+<style>
+body{
+	background: #000;
+}
+.neon-sign {
+	font-family: verdana, sans-serif;
+	font-size: 100px;
+	color: rgb(11,199,22);
+	text-shadow: 30px -10px 60px rgb(181,230,29); <!-- h-shadow v-shadow blur-radius color -->
+	<!-- Center div on page -->
+	width: 476px;
+    height: 217px;
+    position: fixed;
+    width: 80%;
+    height: 80%;
+    left: 30%;
+    top: 10%;
+	<!-- Animation -->
+    -webkit-animation-name: fade-in-out;
+    -webkit-animation-duration: 4s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: fade-in-out;
+    -moz-animation-duration: 4s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+    animation-name: fade-in-out;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.letter-o{
+	<!-- Animation -->
+    -webkit-animation-name: fade-in-out;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    
+    -moz-animation-name: fade-in-out;
+    -moz-animation-duration: 2s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+    
+    animation-name: fade-in-out;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@-moz-keyframes fade-in-out {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes fade-in-out {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes fade-in-out {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.0; }
+    100% { opacity: 1.0; }
+}
+</style>
+</head>
+<body>
+<div class="neon-sign">WILL C<span class="letter-o">O</span>DE <br />F<span class="letter-o">O</span>R F<span class="letter-o">OO</span>D</div>
+</body>
+</html>

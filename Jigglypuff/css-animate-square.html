@@ -1,0 +1,50 @@
+<html>
+<head>
+<style>
+body{
+	font-family: Verdana, sans-serif;
+}
+@keyframes square-to-circle {
+  0%  {
+    border-radius:0 0 0 0;
+    background:rgb(0,162,132);
+    transform:rotate(0deg);
+  }
+  25%  {
+    border-radius:0 50% 0 0;
+    background:rgb(14,39,218);
+    transform:rotate(45deg);
+  }
+  50%  {
+    border-radius:50% 50% 0 0;
+    background:rgb(83,21,210);
+    transform:rotate(90deg);
+  }
+  75%  {
+    border-radius:50% 50% 50% 0;
+    background:rgb(106,19,213);
+    transform:rotate(135deg);
+  }
+  100% { 
+    border-radius:50%;
+    background:rgb(152,27,205);
+    transform:rotate(180deg);
+  }
+}
+div {
+  width: 200px;
+  height: 200px;
+  background-color: coral;
+  animation: square-to-circle 2s 1s infinite alternate; 
+  text-align: center;
+  font-size: 25px;
+}
+</style>
+</head>
+
+<body>
+<br /><br /><br />
+<div>Will Code For Food</div>
+</body>
+
+</html>
